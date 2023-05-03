@@ -1,0 +1,348 @@
+/* ===== Webサイト全体のスタイル ===== */
+/* html */
+html {
+  height: 100%;
+  background-image: url(img/background_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
+  background-attachment: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "maru-maru-gothic-blr-stdn", sans-serif;
+  /* font-family: "kiriko-kana-color1", sans-serif; */
+  /* font-family: "ab-suzume", sans-serif; */
+  /* font-family: "ab-tsurumaru", sans-serif; */
+}
+
+/* body */
+body {
+  height: 100%;
+}
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
+header {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/hukidashi_opacity0.5.png);
+  background-color: rgba(14, 25, 41, 0.3);
+  background-repeat: no-repeat;
+  background-size: min(90vw, 90vh);
+  background-position: center center;
+  text-align: center;
+}
+
+/* h1見出し */
+h1 {
+  color: #fff; /* フォントの色 */
+  font-size: min(20vw, 50vh); /* フォントの大きさ */
+  font-family: "hot-gekai11kk", sans-serif;
+  /* font-family: "dela-gothic-one", sans-serif; */
+  /* font-family: "ab-tori-b", sans-serif; */
+
+  /* padding-top: 20vh; */
+}
+.teramon {
+  /* padding-top:10%; */
+  font-family: "hot-gekai11kk", sans-serif;
+  font-size: min(5vh, 5vw);
+  color: #fff;
+  text-align: center;
+  background-position: top center;
+  background-size: 35vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teramon::before,
+.teramon::after {
+  margin-top: 10px;
+  content: "";
+  width: 10vw;
+  height: 3px;
+  background-color: #fff;
+}
+.teramon::before {
+  margin-right: 20px;
+}
+.teramon::after {
+  margin-left: 20px;
+}
+
+/* ナビゲーションの箱 */
+nav {
+  background-color: #0e1929;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* リスト全体 */
+nav ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* １つ１つのリスト */
+nav li {
+  display: inline-block;
+  margin: 0 3em;
+}
+
+/* リンク */
+nav a {
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* リンクにふれた時 */
+nav a:hover {
+  color: #9bafc8;
+}
+section {
+  padding: 30px;
+}
+
+/* h2見出し */
+.title {
+  position: relative;
+  color: #0e1929;
+  font-family: "maru-maru-gothic-blr-stdn", sans-serif;
+  font-size: 26px;
+  text-align: center;
+
+  margin: 0 5vw 20px 5vw;
+  padding: 10px 50px;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15vw;
+  height: 5px;
+}
+
+.sec1 {
+  background-color: rgba(155, 175, 200, 0.7);
+  color: #0e1929;
+}
+
+.sec1 .title {
+  border-bottom: 5px solid #f6f6f6;
+}
+.sec1 .title::after {
+  background-color: #0e1929;
+}
+p {
+  font-size: 20px;
+  padding: 40px 60px;
+  border-radius: 30px;
+  /* height: 300px; */
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 30px 10vw;
+}
+
+/* ===== パン紹介のスタイル ===== */
+/* セクション */
+.sec2 {
+  padding: 30px;
+  background-color: rgba(14, 25, 41, 0.6);
+}
+
+.sec2 h2 {
+  color: #ffffff;
+  /* border-color: #ffcc11; */
+}
+
+.sec2 .title {
+  border-bottom: 5px solid #f6f6f6;
+}
+.sec2 .title::after {
+  background-color: #9bafc8;
+}
+.cards {
+  /* display: grid;
+  grid-auto-flow: row; */
+  /* place-content: center; */
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  justify-content: left;
+  margin: 0 5vw;
+}
+figure {
+  display: grid;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0;
+  opacity: 0.8;
+}
+figure > * {
+  grid-area: 1/1;
+  transition: 0.4s;
+}
+figure img {
+  height: 360px;
+  width: 240px;
+  object-fit: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+figure figcaption {
+  display: grid;
+  align-items: end;
+  /* font-family: sans-serif; */
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #0000;
+  padding: 0.75rem;
+  background: var(--c, #0009);
+  clip-path: inset(0 var(--_i, 100%) 0 0);
+  -webkit-mask: linear-gradient(#0e1929 0 0), linear-gradient(#0e1929 0 0);
+  -webkit-mask-composite: xor;
+  -webkit-mask-clip: text, padding-box;
+}
+figure:hover figcaption {
+  --_i: 0%;
+}
+.figureOn figcaption {
+  --_i: 0%;
+}
+figure:hover img {
+  transform: scale(1.2);
+}
+@supports not (-webkit-mask-clip: text) {
+  figure figcaption {
+    -webkit-mask: none;
+    color: #fff;
+  }
+}
+
+.card {
+  display: flex;
+
+  /* float:left; */
+}
+.bg-white {
+  background-color: #fff;
+}
+
+.detail {
+  /* display: none; */
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.detail img {
+  border: 5px solid #fff;
+  width: 20%;
+}
+
+.detail p {
+  font-size: 20px;
+  padding: 40px 60px;
+  border-radius: 0;
+  width: 60vw;
+  background: none;
+  margin: 0;
+}
+
+.active {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg1 {
+  background-image: url(img/sushiki.png);
+  background-size: cover;
+}
+
+/* ===== 値段表のスタイル ===== */
+/* セクション */
+.going {
+  padding: 30px;
+  background-image: url(img/wood.jpg);
+}
+
+/* h2見出し */
+.going h2 {
+  color: #ffffff;
+  border-color: #ffcc11;
+}
+
+/* 表 */
+.going table {
+  background-color: #ffffdd;
+  border-collapse: collapse; /* 表の隙間（すきま） */
+  width: 100%;
+}
+
+/* 表のセル */
+.going td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+/* 表の見出しセル */
+.going th {
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color: #ffcc11;
+  text-align: left;
+}
+
+/* 表の見出しセル（季節） */
+.season th {
+  background-color: #33ddcc;
+}
+
+/* ===== アクセス情報のスタイル ===== */
+/* セクション */
+.access {
+  padding: 30px;
+  background-color: #ffffdd;
+  height: 400px;
+  color: #663300;
+}
+
+/* h3見出し */
+.access h3 {
+  font-size: 50px;
+  font-family: lobster;
+  margin-top: 0px;
+}
+
+/* リスト */
+.access ul {
+  list-style-type: none; /* リストのマーカー */
+  padding-left: 0px;
+}
+
+/* 箱 */
+.access div {
+  float: left;
+  width: 50%;
+}
+
+/* フッター */
+footer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #0e1929;
+  color: #ffffff;
+}

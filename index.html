@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Stoke&family=Yellowtail&family=Geo&family=Oswald&family=Lobster&family=Cookie&family=Chewy&family=Limelight&family=Sacramento&family=Plaster&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "rvq6wow",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <header>
+    <h1>Terakado<br />Mio</h1>
+    <h2 class="teramon">teramon</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sec1">私はどこから来たのか</a></li>
+      <li><a href="#sec2">私は何者か</a></li>
+      <li><a href="#going">私はどこへ行くのか</a></li>
+      <!-- <li><a href="#access">アクセスマップ</a></li> -->
+    </ul>
+  </nav>
+
+  <section class="sec1" id="sec1">
+    <h2 class="title">私はどこから来たのか</h2>
+    <p>2002年、東京都練馬区生まれ。<br /></p>
+  </section>
+
+  <section class="sec2" id="sec2">
+    <h2 class="title">私は何者か</h2>
+    <div class="cards">
+      <div class="card">
+        <figure class="bg-white">
+          <img src="img/sushiki.png" alt="Mountains" />
+          <figcaption>study</figcaption>
+        </figure>
+        <div id="univ-detail" class="detail">
+          <p>
+            東京大学理科一類2年生。<br />
+            物理化学選択で入学し、人文/社会学の授業ばかり取っている。哲学、語学、宗教学、社会学を学びたい。<br />
+            LEGO部で幽霊部員をしている。
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <!-- <figure id="letter" style="--c: #fff5;"> -->
+        <figure id="letter">
+          <img src="img/creativity3_gray_rev.jpg" alt="Mountains" />
+          <figcaption>creations</figcaption>
+        </figure>
+        <div id="letter-detail" class="detail">
+          <p>
+            文字を書くのが大好き。ロゴやフォントを模写する。（のでサイトにはあげられないものが多い）<br />
+          </p>
+          <!-- <img src="img/lettering_yasudakodo.jpg" /> -->
+        </div>
+      </div>
+    <div class="card">
+        <!-- <figure id="letter" style="--c: #fff5;"> -->
+        <figure id="pastime">
+          <img src="img/music3_gray.jpg" alt="Mountains" />
+          <figcaption>pastime</figcaption>
+        </figure>
+        <div id="pastime-detail" class="detail">
+          <p>
+         奏でる方はからきしだけど音楽を聴くのは大好き。<br />
+            ゲーム実況を見て音楽を聴いて毎日ノリノリ。
+          </p>
+          <!-- <img src="img/lettering_yasudakodo.jpg" /> -->
+        </div>
+      </div>
+       </div>
+  </section>
+
+  <section class="sec1" id="going">
+    <h2 class="title">私はどこへ行くのか</h2>
+    <table>
+      <tr>
+        <th>定番商品</th>
+        <th>価格</th>
+      </tr>
+      <tr>
+        <td>サクサククロワッサン</td>
+        <td>280円</td>
+      </tr>
+      <tr>
+        <td>レーズンデニッシュ</td>
+        <td>200円</td>
+      </tr>
+      <tr>
+        <td>クラシックバゲット</td>
+        <td>380円</td>
+      </tr>
+      <tr class="season">
+        <th>季節の商品</th>
+        <th>価格</th>
+      </tr>
+      <tr>
+        <td>さわやかハーブTea</td>
+        <td>320円</td>
+      </tr>
+      <tr>
+        <td>こだわりライ麦パン</td>
+        <td>340円</td>
+      </tr>
+      <tr>
+        <td>かぼちゃのクリームパン</td>
+        <td>240円</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>&copy; TERAMON</footer>
+</html>
