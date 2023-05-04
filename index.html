@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="header.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -56,98 +57,114 @@
       <li><a href="#sec1">私はどこから来たのか</a></li>
       <li><a href="#sec2">私は何者か</a></li>
       <li><a href="#going">私はどこへ行くのか</a></li>
-      <!-- <li><a href="#access">アクセスマップ</a></li> -->
+     
     </ul>
   </nav>
 
   <section class="sec1" id="sec1">
     <h2 class="title">私はどこから来たのか</h2>
-    <p>2002年、東京都練馬区生まれ。<br /></p>
+    <p>
+      2002年、東京都練馬区生まれ。<br />
+      幼稚園の頃の将来の夢はモモンガになること。<br />
+      小学生の頃の将来の夢は仮面ライダーWになること。<br />
+      中学生の頃の将来の夢はサンタクロースになること。<br />
+    </p>
   </section>
 
   <section class="sec2" id="sec2">
     <h2 class="title">私は何者か</h2>
     <div class="cards">
       <div class="card">
-        <figure class="bg-white">
-          <img src="img/sushiki.png" alt="Mountains" />
+        <figure class="what bg-white">
+          <div class="card-bg">
+            <img class="thumbnail" src="img/sushiki.png" alt="Mountains" />
+            <div id="univ-detail" class="detail">
+              <p>
+                東京大学理科一類2年生。<br />
+                物理化学選択で入学。自主留年につき前期教養を謳歌中。哲学、語学、宗教学、社会学を学びたい。<br />
+                LEGO部で幽霊部員をしている。<br />
+                <br/>
+                2021〜2023 NPO法人Waffleインターン。<br/>
+                主にTechnovation Girlsの運営。中高生とプログラミングしたりビジネス考えたり、広報したりデザインしたり司会したり。<br/>
+
+                <br/>2022夏 GoogleSTEPインターン。<br/>
+                ChromeOSデベロッパー向けツールを作るチームでVScode拡張機能開発に携わる。(TypeScript使用)
+              </p>
+            </div>
+          </div>
           <figcaption>study</figcaption>
         </figure>
-        <div id="univ-detail" class="detail">
-          <p>
-            東京大学理科一類2年生。<br />
-            物理化学選択で入学し、人文/社会学の授業ばかり取っている。哲学、語学、宗教学、社会学を学びたい。<br />
-            LEGO部で幽霊部員をしている。
-          </p>
-        </div>
       </div>
       <div class="card">
-        <!-- <figure id="letter" style="--c: #fff5;"> -->
-        <figure id="letter">
-          <img src="img/creativity3_gray_rev.jpg" alt="Mountains" />
+        <figure id="letter" class="what">
+          <div class="card-bg">
+            <img
+              class="thumbnail"
+              src="img/creativity3_gray_rev.jpg"
+              alt="Mountains"
+            />
+            <div id="letter-detail" class="detail">
+              <p>
+                文字を書くのが大好き。ロゴやフォントを模写する（のでサイトにはあげられないものが多い）。<br />
+                LEGOもよく作る。<br/>
+              </p>
+
+              <img src="img/yasudakodo_2.jpg" />
+            </div>
+          </div>
           <figcaption>creations</figcaption>
         </figure>
-        <div id="letter-detail" class="detail">
-          <p>
-            文字を書くのが大好き。ロゴやフォントを模写する。（のでサイトにはあげられないものが多い）<br />
-          </p>
-          <!-- <img src="img/lettering_yasudakodo.jpg" /> -->
-        </div>
       </div>
-    <div class="card">
-        <!-- <figure id="letter" style="--c: #fff5;"> -->
-        <figure id="pastime">
-          <img src="img/music3_gray.jpg" alt="Mountains" />
+
+      <div class="card">
+        <figure id="pastime" class="what">
+          <div class="card-bg">
+            <img class="thumbnail" src="img/music3_gray.jpg" alt="Mountains" />
+            <div id="pastime-detail" class="detail">
+              <p>
+                奏でる方はからきしだけど音楽を聴くのは大好き。Mr.Childrenとか尾崎豊とか。<br />
+                ゲーム実況も大好き、牛沢をずっと見てる。<br/>
+                ゲーム実況を見て音楽を聴いて毎日ノリノリ。<br />
+                <br/>格闘技には昔から憧れがあって、最近はキックボクシングジムも<span class="del">たまに</span>行ってる。<br />
+
+                <br/>毎日西武ライオンズの試合を見る。 <br/>
+                <br/>どんなに嫌なことがあっても新しい服を買ったら満足する。<br/>
+<br/>あと人と話すのが好き。<br/>
+              </p>
+            </div>
+          </div>
           <figcaption>pastime</figcaption>
         </figure>
-        <div id="pastime-detail" class="detail">
-          <p>
-         奏でる方はからきしだけど音楽を聴くのは大好き。<br />
-            ゲーム実況を見て音楽を聴いて毎日ノリノリ。
-          </p>
-          <!-- <img src="img/lettering_yasudakodo.jpg" /> -->
-        </div>
       </div>
-       </div>
+    </div>
   </section>
 
   <section class="sec1" id="going">
     <h2 class="title">私はどこへ行くのか</h2>
-    <table>
-      <tr>
-        <th>定番商品</th>
-        <th>価格</th>
-      </tr>
-      <tr>
-        <td>サクサククロワッサン</td>
-        <td>280円</td>
-      </tr>
-      <tr>
-        <td>レーズンデニッシュ</td>
-        <td>200円</td>
-      </tr>
-      <tr>
-        <td>クラシックバゲット</td>
-        <td>380円</td>
-      </tr>
-      <tr class="season">
-        <th>季節の商品</th>
-        <th>価格</th>
-      </tr>
-      <tr>
-        <td>さわやかハーブTea</td>
-        <td>320円</td>
-      </tr>
-      <tr>
-        <td>こだわりライ麦パン</td>
-        <td>340円</td>
-      </tr>
-      <tr>
-        <td>かぼちゃのクリームパン</td>
-        <td>240円</td>
-      </tr>
-    </table>
+     <p>
+      わからない。誰か教えてほしい。<br/>
+      とにかく日々ワクワクが止まらないようなことをやってたい。
+    </p>
   </section>
-
+  <section class="sns sec2">
+    <h2 class="title">SNS</h2>
+   
+  <div class="acc-wraper">
+  <div class="accordion">
+    <div>
+      <a href="https://www.instagram.com/teramon_desu/" target="_blank" rel="noopener noreferrer"><img src="img/sns_instagram_white.png" alt=""></a>
+    </div>
+    <div>
+      <a href="https://twitter.com/tetete_teramon" target="_blank" rel="noopener noreferrer"><img src="img/sns_twitter_white.png" alt=""></a>
+    </div>
+    <div>
+     <a href="https://www.facebook.com/terakado.mio" target="_blank" rel="noopener noreferrer"> <img src="img/sns_facebook.png" alt=""></a>
+    </div>
+    <div>
+      <a href="https://teramon.fly.dev/" target="_blank" rel="noopener noreferrer"><img src="img/sns_teramon_fill.png" alt=""></a>
+    </div>
+  </div>
+</div>
+  </section>
   <footer>&copy; TERAMON</footer>
 </html>

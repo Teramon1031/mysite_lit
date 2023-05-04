@@ -1,0 +1,87 @@
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
+header {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/hukidashi_opacity0.5.png);
+  background-color: rgba(14, 25, 41, 0.3);
+  background-repeat: no-repeat;
+  background-size: min(90vw, 90vh);
+  background-position: center center;
+  text-align: center;
+}
+
+/* h1見出し */
+h1 {
+  color: #fff; /* フォントの色 */
+  font-size: min(20vw, 50vh); /* フォントの大きさ */
+  font-family: "hot-gekai11kk", sans-serif;
+  /* font-family: "dela-gothic-one", sans-serif; */
+  /* font-family: "ab-tori-b", sans-serif; */
+
+  /* padding-top: 20vh; */
+}
+.teramon {
+  /* padding-top:10%; */
+  font-family: "hot-gekai11kk", sans-serif;
+  font-size: min(5vh, 5vw);
+  color: #fff;
+  text-align: center;
+  background-position: top center;
+  background-size: 35vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teramon::before,
+.teramon::after {
+  margin-top: 10px;
+  content: "";
+  width: 10vw;
+  height: 3px;
+  background-color: #fff;
+}
+.teramon::before {
+  margin-right: 20px;
+}
+.teramon::after {
+  margin-left: 20px;
+}
+/* ナビゲーションの箱 */
+nav {
+  background-color: #0e1929;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* リスト全体 */
+nav ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* １つ１つのリスト */
+nav li {
+  display: inline-block;
+  margin: 0 3em;
+}
+
+/* リンク */
+nav a {
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* リンクにふれた時 */
+nav a:hover {
+  color: #9bafc8;
+}
+section {
+  padding: 30px;
+}
